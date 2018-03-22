@@ -1,3 +1,15 @@
+Nombre del repositorio: https://github.com/ltoniut/lab5tp1
+
+Explicación del sistema:
+
+Tengo 4 clases. Main, una BeerHouse, BeerProducer y BeerConsumer. BeerProducer y BeerConsumer son Threads que corren simultáneamente,
+llamando a los métodos de BeerHouse AddStock (Agrega cerveza) y RemoveStock (Remueve cerveza) respectivamente. BeerConsumer, además de la
+BeerHouse a la que accederá, recibe como parámetro la cantidad de cerveza a consumir por un cliente, una a la vez. BeerProducer, además de
+la BeerHouse, recibe como parámetro la cantidad de botellas de cerveza que provee cada vez que accede a su BeerHouse, la cual tiene un límite
+de stock (configurado en 100) que no puede ser superado cuando se llama al método AddStock.
+
+
+
 1) Cuantos consumidores son necesarios para llegar a 0 el stock?
 Aunque mi sistema incluye como variables la cantidad de cerveza que agrega la fábrica por vez,
 dado suficiente tiempo es posible que un cliente baste para acabar con el stock. Sin embargo,
